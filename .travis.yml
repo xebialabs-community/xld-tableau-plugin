@@ -9,6 +9,7 @@ deploy:
   api_key:
     secure: p9Dw6VFBwZqzNDVvoQsX2KrS10DvSMUe93hfU2eoL0pDIqyCm8wm3P/JIkK3phijOANAn2mRXvXmWaAn1wtq00iO2J7Lam/E8mXzlsLRCwKSzipjTQbgCP9/OqdssnOh/F9Ppa4VTqJJcR+WZZ/Drz9Yg2+P4TytA64nbuCnCh748RFJhfHKO0Z/X+GmOhAVjDkQMshIRXUInXTjVMjs1rrtWFCHR6z3TUO3z61flrFOD67kOzJsil0UI2QjPBTNebN+HLxMxm9OzE5KZ2ll8eelk1L9Xen0V1ux7oJRjBYlc0iPg4KzpMVASf90RlXWmDqg3k24wtIUmbpKwEY3pYKRdg09SbFkRThDHOuTCcUmPBNsa2VOgfL8AvjbRRzMl7oLOD9VFSVGck/IcvqgclJ1JIpM4R/NuhDxbkecv8+8Ee5dWyPcsnGzSDSFVeGen1f9lIVoW29vsQdSCcFzmL/9+eueV+CUUKmYQtVvFmrhEF94sa24U3xJCOfLTPJJSulX7W+2/ykV653wkdfw0bkwDOfBS0bjdkg8CJqZxwYEa1nVKJax9luKGEbtYxYjrwwGaV8s4yHJN/33NeG/eLaI6q79BRcPRPki1MmUe1y1pKS319tPyzQrCC2Wy4F3pd2XHHsQ/iS8DXpYTROIOdhM/TQ/aiSkoSOMW2iIuV8=
   file: build/libs/*
+  file_glob: true
   skip_cleanup: true
   on:
     tags: true
