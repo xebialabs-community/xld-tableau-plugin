@@ -1,6 +1,10 @@
 # XL Deploy Tableau Plugin
 
-[TODO]
+[![Travis (.org)](https://img.shields.io/travis/xebialabs-community/xld-tableau-plugin)](https://travis-ci.org/xebialabs-community/xld-tableau-plugin)
+[![GitHub](https://img.shields.io/github/license/xebialabs-community/xld-tableau-plugin)](https://opensource.org/licenses/MIT)
+[![GitHub All Releases](https://img.shields.io/github/downloads/xebialabs-community/xld-tableau-plugin/total)](https://github.com/xebialabs-community/xld-tableau-plugin/releases/latest)
+
+
 
 ## Preface
 This document describes the functionality provided by the 'xld-tableau-plugin'
