@@ -1,0 +1,30 @@
+
+plugins {
+  id "com.github.hierynomus.license" version "0.15.0"
+  id "nebula.release" version "13.0.0"
+  id "com.github.hierynomus.jython" version "0.11.0"
+}
+
+apply plugin: 'java'
+
+
+if (!project.hasProperty('release.scope')) {
+  project.ext['release.scope'] = 'patch'
+}
+
+if (!project.hasProperty('release.useLastTag')) {
+  project.ext['release.useLastTag'] = true
+}
+
+dependencies {
+	jython ":tableauserverclient:0.8.1"
+	jython ":certifi:2019.9.11"
+}
+
+license {
+  header rootProject.file("License.md")
+  excludes(["tableauserverclient/**", "certifi/**"])
+  ext.year = Calendar.getInstance().get(Calendar.YEAR)
+  ext.name = 'XebiaLabs'
+  strictCheck true
+}
